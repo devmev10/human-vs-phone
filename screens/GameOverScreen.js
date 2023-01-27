@@ -1,5 +1,5 @@
 import { View, StyleSheet, Image, Text } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import Colors from "../constants/colors";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Title from "../components/ui/Title";
 
@@ -19,7 +19,7 @@ export default function GameOverScreen({
       </View>
       <Text style={styles.summaryText}>
         Your phone needed <Text style={styles.highlight}>{roundsNumber}</Text>{" "}
-        rounds to guess the number{""}
+        rounds to guess the number{" "}
         <Text style={styles.highlight}>{userNumber}</Text>
       </Text>
       <PrimaryButton onPress={onStartNewGame}>Start New Game</PrimaryButton>
